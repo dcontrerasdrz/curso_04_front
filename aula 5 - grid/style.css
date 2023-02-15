@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 18px;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+     "header header header"
+     "aside main main"
+     "footer footer footer";
+    grid-gap: 5px;
+    grid-template-columns: 20vw auto auto;
+    grid-template-rows: 50px calc(100vh - 100px -10px)50px;
+}
+
+.header {
+    background-color: #e22020;
+    padding: 10px;
+    height: 100px;
+    grid-area: header;
+}
+
+.aside {
+    background-color: #56bffc;
+    padding: 10px;
+    height: 200px;
+    grid-area: aside;
+
+}
+
+.main {
+    background-color: #bc20e2;
+    padding: 10px;
+    grid-area: main;
+
+}
+
+.footer {
+    background-color: #81e220;
+    padding: 10px;
+    height: 100px;
+    grid-area: footer;
+
+}
